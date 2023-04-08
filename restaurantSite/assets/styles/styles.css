@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NunitoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NunitoSans-Bold.ttf");
+}
+
+body {
+  background-color: gray;
+  font-family: "Nunito Sans";
+  width: 100vw;
+  margin: 0;
+}
+
+/* HEADER STYLES */
+.header {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  text-align: center;
+  z-index: 1;
+  padding: 0 5%;
+}
+
+.header div {
+  padding: 5px;
+}
+
+.header .logo,
+.header .socialMedia {
+  flex: 1;
+  margin: auto;
+}
+
+.header .listItems {
+  flex: 3;
+  text-align: center;
+  font-weight: 700;
+  margin: auto;
+}
+
+.header ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  float: left;
+}
+
+.header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header .listItems ul li a::after {
+  content: "";
+  opacity: 0;
+  width: 0;
+  height: 2px;
+  left: 0;
+  display: block;
+  transition: opacity 0.4s ease, width 0.4s ease;
+  -webkit-backface-visibility: hidden;
+  background-color: #ffffff;
+}
+
+.header .listItems ul li a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.header .socialMedia ul li span svg {
+  height: 16pt;
+  text-align: center;
+  fill: white;
+}
+
+/* END HEADER STYLES */
+
+/* CONTENT STYLES */
+
+
+.video {
+  position: absolute;
+}
+
+.titleText {
+  position: relative;
+}
+
+.titleText img {
+  height: 65px;
+}
+
+/* END CONTENT STYLES */
