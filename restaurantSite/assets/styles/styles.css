@@ -70,6 +70,7 @@ a.button:hover {
   text-align: center;
   z-index: 1;
   padding: 0 5%;
+  padding-top: 10px;
 }
 
 .header div {
