@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="logo">
         <img
           class=""
@@ -18,16 +18,15 @@
           height="115"
         />
       </div>
-      <div class="listItems">
+      <nav class="listItems">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#franchise">Franchise</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          
         </ul>
-      </div>
+      </nav>
       <div class="socialMedia">
         <ul>
           <li class="">
@@ -71,7 +70,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </header>
     <div class="content">
       <div class="video">
         <video
@@ -93,45 +92,99 @@
       </div>
       <div class="titleText">
         <div>
-          <div style="max-width: 3276px">
-            <img
-              width="3276"
-              height="424"
-              src="https://muncheez.ca/wp-content/uploads/2022/05/New-Project-6.png"
-              alt="Muncheez logo letters"
-            />
-          </div>
-          <div>
-            <p>
-              Muncheez is the destination for some of the best savoury and sweet
-              crepes, Belgian waffles, the highest quality ice creams, exquisite
-              cakes, homemade soups, salads and %100 natural tropical juices and
-              smoothies.
-            </p>
-          </div>
-          <div>
-            <a
-              href="https://tpgo.ca/RFHMr0"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>ORDER ONLINE NOW!</span>
-            </a>
-          </div>
+          <img
+            width="3276"
+            height="424"
+            src="https://muncheez.ca/wp-content/uploads/2022/05/New-Project-6.png"
+            alt="Muncheez logo letters"
+          />
+          <p>
+            Muncheez is the destination for some of the best savoury and sweet
+            crepes, Belgian waffles, the highest quality ice creams, exquisite
+            cakes, homemade soups, salads and %100 natural tropical juices and
+            smoothies.
+          </p>
+          <a
+            href="https://tpgo.ca/RFHMr0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+            ><span>ORDER ONLINE NOW!</span>
+          </a>
         </div>
       </div>
       <div class="menuItems">
-        <article class="article group">
-          <img class="image right" src="" alt="Image">
-          <section class="content">
-            <h2 class="headline">Text &amp; image -position can swap by changing a class</h2>
-            <p>Change the class "right" to "left" on the &lt;img&gt; tag to switch image and text position.
-            <p><em>Lorem ipsum dolor amet lorem ipsum dolor amet
-             lorem ipsum dolor amet lorem ipsum dolor ipsum sit amet
-              lorem ipsum dolor amet lorem ipsum dolor sit amet</em>
-            <p>Fill in more text to see the text wrap below the image
+        <article class="menuItem group">
+          <div
+            class="image right"
+            style="
+              background-image: url('https://muncheez.ca/wp-content/uploads/2022/05/IMG_0397.jpeg');
+            "
+          ></div>
+          <div style="flex: 1"></div>
+          <section class="menuItemContent">
+            <h3 class="headline">SAVOURY CREPES</h3>
+            <p>
+              Our specialty is our homemade crepes, perfect to build a healthy,
+              delicious breakfast, lunch or dinner wrap. Feel the love with a
+              European-style Deli. Fresh local produce, savoury cheese selection
+              and top it off with a gourmet sauce of choice. GLUTEN FREE AND
+              VEGAN options available!
+            </p>
+
+            <a
+              href="https://muncheez.ca/wp-content/uploads/2022/12/MUNCHEEZ-SAVOURY-FAVOURITES-copy.pdf"
+              class="button"
+              ><span>See Our Menu</span></a
+            >
           </section>
+          <div style="flex: 1"></div>
         </article>
       </div>
+      <div class="sliderOpinions">
+        <h3>
+          SHARE YOUR EXPERIENCE WITH US!<br />
+          HERE’S WHAT PEOPLE SAY ABOUT US
+        </h3>
+        <div class="slider-container">
+          <div class="slide">
+            <div class="opinion">
+              <p>
+                “HOLY CREPE BATMAN! As of this update, I’m proud to say I’ve
+                tried the whole menu (including the dessert and breakfast
+                crepes) and I’ve even tried the make-your-own crepe. Best crepes
+                in the city still and that’s facts. Raz, Raman and Maria are
+                some of the nicest owners around. Their staff are also super
+                friendly (the lady with the hairnet always stuffs my crepes nice
+                and plump with fillings)!”
+              </p>
+              <span> <b>Mehrad M.</b> - Newmarket </span>
+            </div>
+          </div>
+        </div>
+        <div class="sliderHand">
+          <img src="./assets/images/grabHand.gif" alt="" srcset="">
+        </div>
+      </div>
     </div>
+    <footer>
+      <h1>More than a
+        creperie restaurant.</h1>
+      <p>
+        Before Muncheez opened as a local Creperie restaurant in September 2014,
+        it began with a simple idea: “Always With Love.” Always With Love means
+        operating with a business philosophy that values every single customer,
+        employee, supplier, and neighbor. Our goal was to always deliver
+        unparalleled customer service and unmatched customer experience along
+        with delicious food for all ages.
+      </p>
+      <a
+        href="http://muncheez.ca/?page_id=2943"
+        title="Contact Us"
+        class="button-light"
+        ><span>Contact Us</span></a
+      >
+    </footer>
+    <script src="./assets/js/logic.js"></script>
   </body>
 </html>

@@ -31,11 +31,31 @@
 }
 
 body {
-  background-color: gray;
+  background-color: white;
   font-family: "Nunito Sans", "Roboto", system-ui, sans-serif;
   width: 100vw;
   margin: 0;
 }
+
+a.button {
+  font-size: 11px;
+  line-height: 2.29em;
+  color: white;
+  text-decoration: none;
+  background-color: #ff4e00;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.857em 1.714em;
+  border-radius: 2px;
+  transition: all ease-in-out 0.2s;
+}
+
+a.button:hover {
+  background-color: #260b00c6;
+  font-size: 12px;
+}
+
+
 
 /* HEADER STYLES */
 .header {
@@ -121,6 +141,9 @@ body {
 }
 .video video {
   width: 100%;
+  height: 600px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .titleText {
@@ -143,22 +166,172 @@ body {
   font-weight: 300;
 }
 
-.titleText a {
+.menuItem {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.image {
+  background: silver;
+  width: 500px;
+  height: 300px;
+  border-radius: 2px;
+  padding: 20px;
+  color: #efefef;
+  font-size: 8rem;
+  background-size: cover;
+  flex: 6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuItemContent {
+  padding: 0 20px;
+  color: black;
+  flex: 5;
+  margin: auto;
+}
+
+.menuItemContent h3 {
+  font-size: 22px;
+  line-height: 1.25em;
+  letter-spacing: 4px;
+}
+
+.menuItemContent p {
+  font-size: 14px;
+  color: #272727;
+  line-height: 30px;
+  font-family: 'Nunito Sans';
+  text-align: justify;
+}
+
+
+.menuItems {
+  font-family: "Roboto";
+  width: 90%;
+  z-index: 1;
+  padding: 20px 5%;
+  margin-top: 100px;
+}
+
+/* SLIDER */
+
+.sliderOpinions {
+  text-align: center;
+  padding: 60px 0;
+  overflow: hidden;
+    width: 98%;
+}
+
+.sliderOpinions h3 {
+  width: 45%;
+  margin: auto;
+  font-size: 22px;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+
+.slider-container {
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+.slide{
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.opinion {
+  width: 70vw;
+}
+
+.opinion p {
+  font-size: 22px;
+  font-weight: 200;
+  font-family: 'Roboto';
+}
+
+.opinion span {
+  font-size: 14px;
+  font-family: 'Nunito Sans';
+  
+}
+
+@media(min-width: 1200px){
+  .slide {
+    padding: 3rem;
+  }
+}
+
+.slide img{
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 5px 5px 50px -1px var(--shadow);
+  border-radius: 4px;
+  user-select: none;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .slide img{
+  transform: scale(0.9);
+  box-shadow: 5px 5px 40px -1px var(--shadow);
+}
+
+.sliderHand {
+  width: 100vw;
+}
+.sliderHand img {
+  width: 60px;
+}
+/* END CONTENT STYLES */
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #e0b991;
+  padding: 10% 30%;
+  text-align: center;
+}
+
+footer h1{
+  font-family: 'Roboto';
+  color: #ff4e00;
+}
+
+footer p {
+  font-weight: 200;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+a.button-light {
   font-size: 11px;
   line-height: 2.29em;
-  color: white;
+  color: #ff4e00;
   text-decoration: none;
-  background-color: #ff4e00;
+  border: 2px solid #ff4e00;
   font-weight: 700;
   display: inline-block;
-  padding: 2% 3.5%;
+  padding: 0.857em 1.714em;
   border-radius: 2px;
+  background-color: transparent;
   transition: all ease-in-out 0.2s;
 }
 
-.titleText a:hover{
-  background-color: #260b00c6;
-  font-size: 12px;
+a.button-light:hover {
+  color: white;
+  background-color: #ff4e00;
 }
 
-/* END CONTENT STYLES */
+/* END FOOTER STYLES */
