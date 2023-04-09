@@ -33,7 +33,7 @@
 body {
   background-color: white;
   font-family: "Nunito Sans", "Roboto", system-ui, sans-serif;
-  width: 100vw;
+  width: 97vw;
   margin: 0;
 }
 
@@ -264,11 +264,6 @@ a.button:hover {
   
 }
 
-@media(min-width: 1200px){
-  .slide {
-    padding: 3rem;
-  }
-}
 
 .slide img{
   max-width: 100%;
