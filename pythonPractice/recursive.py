@@ -10,5 +10,5 @@ fibStart = int(input("Enter the start number: "))
 fibNumber = int(input("Enter the length of the list: ")) + fibStart - 2
 
 fibList = fibonacci(fibNumber, fibStart)
-print(len(fibList))
+#print(len(fibList))
 print(fibList)
